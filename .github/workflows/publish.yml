@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 22.x
 
       - name: Get npm cache directory
         id: npm-cache
@@ -53,6 +53,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node_modules-cache-
 
+      - name: Clone TS Library (Fetch Latest API Docs)
+        run: |
+          git clone --depth 1 https://github.com/WhiskeySockets/Baileys.git temp_library
+          rm -rf docs/api
+          cd temp_library && yarn install
+          yarn build:docs
+          cd ../
+          mv temp_library/docs/api ./docs/api
+          rm -rf temp_library
+
       - name: Install Dependencies
         run: npm ci || npm install
 
@@ -64,5 +74,5 @@ jobs:
         continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          cname: guide.whiskeysockets.io
+          cname: baileys.wiki
           publish_dir: ./build

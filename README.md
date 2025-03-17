@@ -1,7 +1,5 @@
-# Website
-
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
-
+# baileys.wiki - Guide & Docs
+A website that serves documentation and guides for the [Baileys](https://github.com/whiskeysockets/baileys) project.
 ### Installation
 
 ```

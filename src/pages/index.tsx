@@ -1,42 +1,17 @@
-import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import type { ReactNode } from "react";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
-import styles from "./index.module.css";
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+export default function Home(): ReactNode {
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Baileys Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Welcome to ${siteConfig.title}`}
-      description="Baileys does not require Selenium or any other browser to be interface with WhatsApp Web, it does so directly using a WebSocket."
-    >
-      <HomepageHeader />
+    <Layout>
       <main>
-        <HomepageFeatures />
+        <BrowserOnly fallback={<a href="/docs/intro">Click to go to Docs</a>}>
+          {() => {
+            window.location.href = "/docs/intro";
+            return <h1>loading</h1>;
+          }}
+        </BrowserOnly>
       </main>
     </Layout>
   );
