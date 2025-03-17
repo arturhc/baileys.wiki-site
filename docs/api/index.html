@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">baileys | Baileys</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" name="twitter:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" property="og:url" content="https://baileys.wiki/docs/api/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="baileys | Baileys"><meta data-rh="true" name="description" content="Namespaces"><meta data-rh="true" property="og:description" content="Namespaces"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://baileys.wiki/docs/api/"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/" hreflang="en"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.b48fa96d.css">
+<script src="/assets/js/runtime~main.5fdcdef7.js" defer="defer"></script>
+<script src="/assets/js/main.274e271f.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/WhiskeySockets-colorful.png"><link rel="preload" as="image" href="/img/Written-By-Human-Not-By-AI-Badge-white.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/WhiskeySockets-colorful.png" alt="WhiskeySo ckets Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" style="transform:scale(1.25);padding:0 0.5rem"><img src="/img/WhiskeySockets-colorful.png" alt="WhiskeySo ckets Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" style="transform:scale(1.25);padding:0 0.5rem"></div><b class="navbar__title text--truncate">Baileys</b></a><a class="navbar__item navbar__link" href="/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/api/classes/BinaryInfo">API Reference</a></div><div class="navbar__items navbar__items--right"><a href="https://purpshell.dev/sponsor" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-sponsor-link" aria-label="Sponsor" title="Sponsor">Sponsor</a><a href="https://whiskey.so/discord" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-discord-link" aria-label="Discord" title="Discord">Discord</a><a href="https://github.com/WhiskeySockets/Baileys" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub" title="GitHub">GitHub</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/classes/BinaryInfo">classes</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/enumerations/DisconnectReason">enumerations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/functions/addTransactionCapability">functions</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/api/">baileys</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/interfaces/BaileysEventEmitter">interfaces</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/namespaces/proto/">namespaces</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/type-aliases/AccountSettings">type-aliases</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/variables/ALL_WA_PATCH_NAMES">variables</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">baileys</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>baileys</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="namespaces">Namespaces<a href="#namespaces" class="hash-link" aria-label="Direct link to Namespaces" title="Direct link to Namespaces">​</a></h2>
+<ul>
+<li><a href="/docs/api/namespaces/proto/">proto</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="enumerations">Enumerations<a href="#enumerations" class="hash-link" aria-label="Direct link to Enumerations" title="Direct link to Enumerations">​</a></h2>
+<ul>
+<li><a href="/docs/api/enumerations/DisconnectReason">DisconnectReason</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="classes">Classes<a href="#classes" class="hash-link" aria-label="Direct link to Classes" title="Direct link to Classes">​</a></h2>
+<ul>
+<li><a href="/docs/api/classes/BinaryInfo">BinaryInfo</a></li>
+<li><a href="/docs/api/classes/USyncContactProtocol">USyncContactProtocol</a></li>
+<li><a href="/docs/api/classes/USyncDeviceProtocol">USyncDeviceProtocol</a></li>
+<li><a href="/docs/api/classes/USyncDisappearingModeProtocol">USyncDisappearingModeProtocol</a></li>
+<li><a href="/docs/api/classes/USyncQuery">USyncQuery</a></li>
+<li><a href="/docs/api/classes/USyncStatusProtocol">USyncStatusProtocol</a></li>
+<li><a href="/docs/api/classes/USyncUser">USyncUser</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="interfaces">Interfaces<a href="#interfaces" class="hash-link" aria-label="Direct link to Interfaces" title="Direct link to Interfaces">​</a></h2>
+<ul>
+<li><a href="/docs/api/interfaces/BaileysEventEmitter">BaileysEventEmitter</a></li>
+<li><a href="/docs/api/interfaces/Contact">Contact</a></li>
+<li><a href="/docs/api/interfaces/GroupMetadata">GroupMetadata</a></li>
+<li><a href="/docs/api/interfaces/GroupModificationResponse">GroupModificationResponse</a></li>
+<li><a href="/docs/api/interfaces/PresenceData">PresenceData</a></li>
+<li><a href="/docs/api/interfaces/WAGroupCreateResponse">WAGroupCreateResponse</a></li>
+<li><a href="/docs/api/interfaces/WAUrlInfo">WAUrlInfo</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="type-aliases">Type Aliases<a href="#type-aliases" class="hash-link" aria-label="Direct link to Type Aliases" title="Direct link to Type Aliases">​</a></h2>
+<ul>
+<li><a href="/docs/api/type-aliases/AccountSettings">AccountSettings</a></li>
+<li><a href="/docs/api/type-aliases/AnyMediaMessageContent">AnyMediaMessageContent</a></li>
+<li><a href="/docs/api/type-aliases/AnyMessageContent">AnyMessageContent</a></li>
+<li><a href="/docs/api/type-aliases/AnyRegularMessageContent">AnyRegularMessageContent</a></li>
+<li><a href="/docs/api/type-aliases/AuthenticationCreds">AuthenticationCreds</a></li>
+<li><a href="/docs/api/type-aliases/AuthenticationState">AuthenticationState</a></li>
+<li><a href="/docs/api/type-aliases/BaileysEvent">BaileysEvent</a></li>
+<li><a href="/docs/api/type-aliases/BaileysEventMap">BaileysEventMap</a></li>
+<li><a href="/docs/api/type-aliases/BinaryNode">BinaryNode</a></li>
+<li><a href="/docs/api/type-aliases/BinaryNodeAttributes">BinaryNodeAttributes</a></li>
+<li><a href="/docs/api/type-aliases/BinaryNodeCodingOptions">BinaryNodeCodingOptions</a></li>
+<li><a href="/docs/api/type-aliases/BinaryNodeData">BinaryNodeData</a></li>
+<li><a href="/docs/api/type-aliases/BrowsersMap">BrowsersMap</a></li>
+<li><a href="/docs/api/type-aliases/BufferedEventData">BufferedEventData</a></li>
+<li><a href="/docs/api/type-aliases/ButtonReplyInfo">ButtonReplyInfo</a></li>
+<li><a href="/docs/api/type-aliases/CacheStore">CacheStore</a></li>
+<li><a href="/docs/api/type-aliases/CatalogCollection">CatalogCollection</a></li>
+<li><a href="/docs/api/type-aliases/CatalogCursor">CatalogCursor</a></li>
+<li><a href="/docs/api/type-aliases/CatalogResult">CatalogResult</a></li>
+<li><a href="/docs/api/type-aliases/CatalogStatus">CatalogStatus</a></li>
+<li><a href="/docs/api/type-aliases/Chat">Chat</a></li>
+<li><a href="/docs/api/type-aliases/ChatModification">ChatModification</a></li>
+<li><a href="/docs/api/type-aliases/ChatMutation">ChatMutation</a></li>
+<li><a href="/docs/api/type-aliases/ChatMutationMap">ChatMutationMap</a></li>
+<li><a href="/docs/api/type-aliases/ChatUpdate">ChatUpdate</a></li>
+<li><a href="/docs/api/type-aliases/ConnectionState">ConnectionState</a></li>
+<li><a href="/docs/api/type-aliases/CurveKeyPair">CurveKeyPair</a></li>
+<li><a href="/docs/api/type-aliases/DebouncedTimeout">DebouncedTimeout</a></li>
+<li><a href="/docs/api/type-aliases/DeviceListData">DeviceListData</a></li>
+<li><a href="/docs/api/type-aliases/DisappearingModeData">DisappearingModeData</a></li>
+<li><a href="/docs/api/type-aliases/DownloadableMessage">DownloadableMessage</a></li>
+<li><a href="/docs/api/type-aliases/Event">Event</a></li>
+<li><a href="/docs/api/type-aliases/EventInputType">EventInputType</a></li>
+<li><a href="/docs/api/type-aliases/FullJid">FullJid</a></li>
+<li><a href="/docs/api/type-aliases/GetCatalogOptions">GetCatalogOptions</a></li>
+<li><a href="/docs/api/type-aliases/Global">Global</a></li>
+<li><a href="/docs/api/type-aliases/GroupInviteInfo">GroupInviteInfo</a></li>
+<li><a href="/docs/api/type-aliases/GroupMetadataParticipants">GroupMetadataParticipants</a></li>
+<li><a href="/docs/api/type-aliases/GroupParticipant">GroupParticipant</a></li>
+<li><a href="/docs/api/type-aliases/InitialAppStateSyncOptions">InitialAppStateSyncOptions</a></li>
+<li><a href="/docs/api/type-aliases/InitialReceivedChatsState">InitialReceivedChatsState</a></li>
+<li><a href="/docs/api/type-aliases/JidServer">JidServer</a></li>
+<li><a href="/docs/api/type-aliases/JidWithDevice">JidWithDevice</a></li>
+<li><a href="/docs/api/type-aliases/KeyIndexData">KeyIndexData</a></li>
+<li><a href="/docs/api/type-aliases/KeyPair">KeyPair</a></li>
+<li><a href="/docs/api/type-aliases/LastMessageList">LastMessageList</a></li>
+<li><a href="/docs/api/type-aliases/LTHashState">LTHashState</a></li>
+<li><a href="/docs/api/type-aliases/MediaConnInfo">MediaConnInfo</a></li>
+<li><a href="/docs/api/type-aliases/MediaDecryptionKeyInfo">MediaDecryptionKeyInfo</a></li>
+<li><a href="/docs/api/type-aliases/MediaDownloadOptions">MediaDownloadOptions</a></li>
+<li><a href="/docs/api/type-aliases/MediaGenerationOptions">MediaGenerationOptions</a></li>
+<li><a href="/docs/api/type-aliases/MediaType">MediaType</a></li>
+<li><a href="/docs/api/type-aliases/MessageContentGenerationOptions">MessageContentGenerationOptions</a></li>
+<li><a href="/docs/api/type-aliases/MessageGenerationOptions">MessageGenerationOptions</a></li>
+<li><a href="/docs/api/type-aliases/MessageGenerationOptionsFromContent">MessageGenerationOptionsFromContent</a></li>
+<li><a href="/docs/api/type-aliases/MessageReceiptType">MessageReceiptType</a></li>
+<li><a href="/docs/api/type-aliases/MessageRelayOptions">MessageRelayOptions</a></li>
+<li><a href="/docs/api/type-aliases/MessageType">MessageType</a></li>
+<li><a href="/docs/api/type-aliases/MessageUpsertType">MessageUpsertType</a></li>
+<li><a href="/docs/api/type-aliases/MessageUserReceipt">MessageUserReceipt</a></li>
+<li><a href="/docs/api/type-aliases/MessageUserReceiptUpdate">MessageUserReceiptUpdate</a></li>
+<li><a href="/docs/api/type-aliases/MinimalMessage">MinimalMessage</a></li>
+<li><a href="/docs/api/type-aliases/MiscMessageGenerationOptions">MiscMessageGenerationOptions</a></li>
+<li><a href="/docs/api/type-aliases/OrderDetails">OrderDetails</a></li>
+<li><a href="/docs/api/type-aliases/OrderPrice">OrderPrice</a></li>
+<li><a href="/docs/api/type-aliases/OrderProduct">OrderProduct</a></li>
+<li><a href="/docs/api/type-aliases/ParsedDeviceInfo">ParsedDeviceInfo</a></li>
+<li><a href="/docs/api/type-aliases/ParticipantAction">ParticipantAction</a></li>
+<li><a href="/docs/api/type-aliases/PatchedMessageWithRecipientJID">PatchedMessageWithRecipientJID</a></li>
+<li><a href="/docs/api/type-aliases/PollMessageOptions">PollMessageOptions</a></li>
+<li><a href="/docs/api/type-aliases/Product">Product</a></li>
+<li><a href="/docs/api/type-aliases/ProductAvailability">ProductAvailability</a></li>
+<li><a href="/docs/api/type-aliases/ProductBase">ProductBase</a></li>
+<li><a href="/docs/api/type-aliases/ProductCreate">ProductCreate</a></li>
+<li><a href="/docs/api/type-aliases/ProductCreateResult">ProductCreateResult</a></li>
+<li><a href="/docs/api/type-aliases/ProductUpdate">ProductUpdate</a></li>
+<li><a href="/docs/api/type-aliases/ProtocolAddress">ProtocolAddress</a></li>
+<li><a href="/docs/api/type-aliases/RequestJoinAction">RequestJoinAction</a></li>
+<li><a href="/docs/api/type-aliases/RequestJoinMethod">RequestJoinMethod</a></li>
+<li><a href="/docs/api/type-aliases/SignalAuthState">SignalAuthState</a></li>
+<li><a href="/docs/api/type-aliases/SignalCreds">SignalCreds</a></li>
+<li><a href="/docs/api/type-aliases/SignalDataSet">SignalDataSet</a></li>
+<li><a href="/docs/api/type-aliases/SignalDataTypeMap">SignalDataTypeMap</a></li>
+<li><a href="/docs/api/type-aliases/SignalIdentity">SignalIdentity</a></li>
+<li><a href="/docs/api/type-aliases/SignalKeyStore">SignalKeyStore</a></li>
+<li><a href="/docs/api/type-aliases/SignalKeyStoreWithTransaction">SignalKeyStoreWithTransaction</a></li>
+<li><a href="/docs/api/type-aliases/SignalRepository">SignalRepository</a></li>
+<li><a href="/docs/api/type-aliases/SignedKeyPair">SignedKeyPair</a></li>
+<li><a href="/docs/api/type-aliases/SocketConfig">SocketConfig</a></li>
+<li><a href="/docs/api/type-aliases/StatusData">StatusData</a></li>
+<li><a href="/docs/api/type-aliases/TransactionCapabilityOptions">TransactionCapabilityOptions</a></li>
+<li><a href="/docs/api/type-aliases/URLGenerationOptions">URLGenerationOptions</a></li>
+<li><a href="/docs/api/type-aliases/UserFacingSocketConfig">UserFacingSocketConfig</a></li>
+<li><a href="/docs/api/type-aliases/USyncQueryResult">USyncQueryResult</a></li>
+<li><a href="/docs/api/type-aliases/USyncQueryResultList">USyncQueryResultList</a></li>
+<li><a href="/docs/api/type-aliases/Value">Value</a></li>
+<li><a href="/docs/api/type-aliases/WABrowserDescription">WABrowserDescription</a></li>
+<li><a href="/docs/api/type-aliases/WABusinessHoursConfig">WABusinessHoursConfig</a></li>
+<li><a href="/docs/api/type-aliases/WABusinessProfile">WABusinessProfile</a></li>
+<li><a href="/docs/api/type-aliases/WACallEvent">WACallEvent</a></li>
+<li><a href="/docs/api/type-aliases/WACallUpdateType">WACallUpdateType</a></li>
+<li><a href="/docs/api/type-aliases/WAConnectionState">WAConnectionState</a></li>
+<li><a href="/docs/api/type-aliases/WAContactMessage">WAContactMessage</a></li>
+<li><a href="/docs/api/type-aliases/WAContactsArrayMessage">WAContactsArrayMessage</a></li>
+<li><a href="/docs/api/type-aliases/WAContextInfo">WAContextInfo</a></li>
+<li><a href="/docs/api/type-aliases/WAGenericMediaMessage">WAGenericMediaMessage</a></li>
+<li><a href="/docs/api/type-aliases/WAInitResponse">WAInitResponse</a></li>
+<li><a href="/docs/api/type-aliases/WALocationMessage">WALocationMessage</a></li>
+<li><a href="/docs/api/type-aliases/WAMediaPayloadStream">WAMediaPayloadStream</a></li>
+<li><a href="/docs/api/type-aliases/WAMediaPayloadURL">WAMediaPayloadURL</a></li>
+<li><a href="/docs/api/type-aliases/WAMediaUpload">WAMediaUpload</a></li>
+<li><a href="/docs/api/type-aliases/WAMediaUploadFunction">WAMediaUploadFunction</a></li>
+<li><a href="/docs/api/type-aliases/WAMessage">WAMessage</a></li>
+<li><a href="/docs/api/type-aliases/WAMessageContent">WAMessageContent</a></li>
+<li><a href="/docs/api/type-aliases/WAMessageCursor">WAMessageCursor</a></li>
+<li><a href="/docs/api/type-aliases/WAMessageKey">WAMessageKey</a></li>
+<li><a href="/docs/api/type-aliases/WAMessageUpdate">WAMessageUpdate</a></li>
+<li><a href="/docs/api/type-aliases/WAPatchCreate">WAPatchCreate</a></li>
+<li><a href="/docs/api/type-aliases/WAPatchName">WAPatchName</a></li>
+<li><a href="/docs/api/type-aliases/WAPresence">WAPresence</a></li>
+<li><a href="/docs/api/type-aliases/WAPrivacyCallValue">WAPrivacyCallValue</a></li>
+<li><a href="/docs/api/type-aliases/WAPrivacyGroupAddValue">WAPrivacyGroupAddValue</a></li>
+<li><a href="/docs/api/type-aliases/WAPrivacyMessagesValue">WAPrivacyMessagesValue</a></li>
+<li><a href="/docs/api/type-aliases/WAPrivacyOnlineValue">WAPrivacyOnlineValue</a></li>
+<li><a href="/docs/api/type-aliases/WAPrivacyValue">WAPrivacyValue</a></li>
+<li><a href="/docs/api/type-aliases/WAReadReceiptsValue">WAReadReceiptsValue</a></li>
+<li><a href="/docs/api/type-aliases/WASendableProduct">WASendableProduct</a></li>
+<li><a href="/docs/api/type-aliases/WASocket">WASocket</a></li>
+<li><a href="/docs/api/type-aliases/WATextMessage">WATextMessage</a></li>
+<li><a href="/docs/api/type-aliases/WAVersion">WAVersion</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="variables">Variables<a href="#variables" class="hash-link" aria-label="Direct link to Variables" title="Direct link to Variables">​</a></h2>
+<ul>
+<li><a href="/docs/api/variables/ALL_WA_PATCH_NAMES">ALL_WA_PATCH_NAMES</a></li>
+<li><a href="/docs/api/variables/Browsers">Browsers</a></li>
+<li><a href="/docs/api/variables/BufferJSON">BufferJSON</a></li>
+<li><a href="/docs/api/variables/Curve">Curve</a></li>
+<li><a href="/docs/api/variables/DEF_CALLBACK_PREFIX">DEF_CALLBACK_PREFIX</a></li>
+<li><a href="/docs/api/variables/DEF_TAG_PREFIX">DEF_TAG_PREFIX</a></li>
+<li><a href="/docs/api/variables/DEFAULT_CACHE_TTLS">DEFAULT_CACHE_TTLS</a></li>
+<li><a href="/docs/api/variables/DEFAULT_CONNECTION_CONFIG">DEFAULT_CONNECTION_CONFIG</a></li>
+<li><a href="/docs/api/variables/DEFAULT_ORIGIN">DEFAULT_ORIGIN</a></li>
+<li><a href="/docs/api/variables/DICT_VERSION">DICT_VERSION</a></li>
+<li><a href="/docs/api/variables/FLAG_BYTE">FLAG_BYTE</a></li>
+<li><a href="/docs/api/variables/FLAG_EVENT">FLAG_EVENT</a></li>
+<li><a href="/docs/api/variables/FLAG_EXTENDED">FLAG_EXTENDED</a></li>
+<li><a href="/docs/api/variables/FLAG_FIELD">FLAG_FIELD</a></li>
+<li><a href="/docs/api/variables/FLAG_GLOBAL">FLAG_GLOBAL</a></li>
+<li><a href="/docs/api/variables/INITIAL_PREKEY_COUNT">INITIAL_PREKEY_COUNT</a></li>
+<li><a href="/docs/api/variables/KEY_BUNDLE_TYPE">KEY_BUNDLE_TYPE</a></li>
+<li><a href="/docs/api/variables/LT_HASH_ANTI_TAMPERING">LT_HASH_ANTI_TAMPERING</a></li>
+<li><a href="/docs/api/variables/MEDIA_HKDF_KEY_MAPPING">MEDIA_HKDF_KEY_MAPPING</a></li>
+<li><a href="/docs/api/variables/MEDIA_KEYS">MEDIA_KEYS</a></li>
+<li><a href="/docs/api/variables/MEDIA_PATH_MAP">MEDIA_PATH_MAP</a></li>
+<li><a href="/docs/api/variables/MIN_PREKEY_COUNT">MIN_PREKEY_COUNT</a></li>
+<li><a href="/docs/api/variables/MISSING_KEYS_ERROR_TEXT">MISSING_KEYS_ERROR_TEXT</a></li>
+<li><a href="/docs/api/variables/NACK_REASONS">NACK_REASONS</a></li>
+<li><a href="/docs/api/variables/NO_MESSAGE_FOUND_ERROR_TEXT">NO_MESSAGE_FOUND_ERROR_TEXT</a></li>
+<li><a href="/docs/api/variables/NOISE_MODE">NOISE_MODE</a></li>
+<li><a href="/docs/api/variables/NOISE_WA_HEADER">NOISE_WA_HEADER</a></li>
+<li><a href="/docs/api/variables/OFFICIAL_BIZ_JID">OFFICIAL_BIZ_JID</a></li>
+<li><a href="/docs/api/variables/PHONE_CONNECTION_CB">PHONE_CONNECTION_CB</a></li>
+<li><a href="/docs/api/variables/PROCESSABLE_HISTORY_TYPES">PROCESSABLE_HISTORY_TYPES</a></li>
+<li><a href="/docs/api/variables/PSA_WID">PSA_WID</a></li>
+<li><a href="/docs/api/variables/S_WHATSAPP_NET">S_WHATSAPP_NET</a></li>
+<li><a href="/docs/api/variables/SERVER_JID">SERVER_JID</a></li>
+<li><a href="/docs/api/variables/STORIES_JID">STORIES_JID</a></li>
+<li><a href="/docs/api/variables/UNAUTHORIZED_CODES">UNAUTHORIZED_CODES</a></li>
+<li><a href="/docs/api/variables/URL_REGEX">URL_REGEX</a></li>
+<li><a href="/docs/api/variables/WA_CERT_DETAILS">WA_CERT_DETAILS</a></li>
+<li><a href="/docs/api/variables/WA_DEFAULT_EPHEMERAL">WA_DEFAULT_EPHEMERAL</a></li>
+<li><a href="/docs/api/variables/WEB_EVENTS">WEB_EVENTS</a></li>
+<li><a href="/docs/api/variables/WEB_GLOBALS">WEB_GLOBALS</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2>
+<ul>
+<li><a href="/docs/api/functions/addTransactionCapability">addTransactionCapability</a></li>
+<li><a href="/docs/api/functions/aesDecrypt">aesDecrypt</a></li>
+<li><a href="/docs/api/functions/aesDecryptCTR">aesDecryptCTR</a></li>
+<li><a href="/docs/api/functions/aesDecryptGCM">aesDecryptGCM</a></li>
+<li><a href="/docs/api/functions/aesDecryptWithIV">aesDecryptWithIV</a></li>
+<li><a href="/docs/api/functions/aesEncrypt">aesEncrypt</a></li>
+<li><a href="/docs/api/functions/aesEncryptCTR">aesEncryptCTR</a></li>
+<li><a href="/docs/api/functions/aesEncryptGCM">aesEncryptGCM</a></li>
+<li><a href="/docs/api/functions/aesEncrypWithIV">aesEncrypWithIV</a></li>
+<li><a href="/docs/api/functions/aggregateMessageKeysNotFromMe">aggregateMessageKeysNotFromMe</a></li>
+<li><a href="/docs/api/functions/areJidsSameUser">areJidsSameUser</a></li>
+<li><a href="/docs/api/functions/assertMediaContent">assertMediaContent</a></li>
+<li><a href="/docs/api/functions/assertNodeErrorFree">assertNodeErrorFree</a></li>
+<li><a href="/docs/api/functions/binaryNodeToString">binaryNodeToString</a></li>
+<li><a href="/docs/api/functions/bindWaitForConnectionUpdate">bindWaitForConnectionUpdate</a></li>
+<li><a href="/docs/api/functions/bindWaitForEvent">bindWaitForEvent</a></li>
+<li><a href="/docs/api/functions/bytesToCrockford">bytesToCrockford</a></li>
+<li><a href="/docs/api/functions/captureEventStream">captureEventStream</a></li>
+<li><a href="/docs/api/functions/chatModificationToAppPatch">chatModificationToAppPatch</a></li>
+<li><a href="/docs/api/functions/cleanMessage">cleanMessage</a></li>
+<li><a href="/docs/api/functions/configureSuccessfulPairing">configureSuccessfulPairing</a></li>
+<li><a href="/docs/api/functions/createSignalIdentity">createSignalIdentity</a></li>
+<li><a href="/docs/api/functions/debouncedTimeout">debouncedTimeout</a></li>
+<li><a href="/docs/api/functions/decodeBinaryNode">decodeBinaryNode</a></li>
+<li><a href="/docs/api/functions/decodeDecompressedBinaryNode">decodeDecompressedBinaryNode</a></li>
+<li><a href="/docs/api/functions/decodeMediaRetryNode">decodeMediaRetryNode</a></li>
+<li><a href="/docs/api/functions/decodeMessageNode">decodeMessageNode</a></li>
+<li><a href="/docs/api/functions/decodePatches">decodePatches</a></li>
+<li><a href="/docs/api/functions/decodeSyncdMutations">decodeSyncdMutations</a></li>
+<li><a href="/docs/api/functions/decodeSyncdPatch">decodeSyncdPatch</a></li>
+<li><a href="/docs/api/functions/decodeSyncdSnapshot">decodeSyncdSnapshot</a></li>
+<li><a href="/docs/api/functions/decompressingIfRequired">decompressingIfRequired</a></li>
+<li><a href="/docs/api/functions/decryptMediaRetryData">decryptMediaRetryData</a></li>
+<li><a href="/docs/api/functions/decryptMessageNode">decryptMessageNode</a></li>
+<li><a href="/docs/api/functions/decryptPollVote">decryptPollVote</a></li>
+<li><a href="/docs/api/functions/delay">delay</a></li>
+<li><a href="/docs/api/functions/delayCancellable">delayCancellable</a></li>
+<li><a href="/docs/api/functions/derivePairingCodeKey">derivePairingCodeKey</a></li>
+<li><a href="/docs/api/functions/downloadAndProcessHistorySyncNotification">downloadAndProcessHistorySyncNotification</a></li>
+<li><a href="/docs/api/functions/downloadContentFromMessage">downloadContentFromMessage</a></li>
+<li><a href="/docs/api/functions/downloadEncryptedContent">downloadEncryptedContent</a></li>
+<li><a href="/docs/api/functions/downloadExternalBlob">downloadExternalBlob</a></li>
+<li><a href="/docs/api/functions/downloadExternalPatch">downloadExternalPatch</a></li>
+<li><a href="/docs/api/functions/downloadHistory">downloadHistory</a></li>
+<li><a href="/docs/api/functions/downloadMediaMessage">downloadMediaMessage</a></li>
+<li><a href="/docs/api/functions/encodeBase64EncodedStringForUpload">encodeBase64EncodedStringForUpload</a></li>
+<li><a href="/docs/api/functions/encodeBigEndian">encodeBigEndian</a></li>
+<li><a href="/docs/api/functions/encodeBinaryNode">encodeBinaryNode</a></li>
+<li><a href="/docs/api/functions/encodeSignedDeviceIdentity">encodeSignedDeviceIdentity</a></li>
+<li><a href="/docs/api/functions/encodeSyncdPatch">encodeSyncdPatch</a></li>
+<li><a href="/docs/api/functions/encodeWAM">encodeWAM</a></li>
+<li><a href="/docs/api/functions/encodeWAMessage">encodeWAMessage</a></li>
+<li><a href="/docs/api/functions/encryptedStream">encryptedStream</a></li>
+<li><a href="/docs/api/functions/encryptMediaRetryRequest">encryptMediaRetryRequest</a></li>
+<li><a href="/docs/api/functions/extensionForMediaMessage">extensionForMediaMessage</a></li>
+<li><a href="/docs/api/functions/extractDeviceJids">extractDeviceJids</a></li>
+<li><a href="/docs/api/functions/extractImageThumb">extractImageThumb</a></li>
+<li><a href="/docs/api/functions/extractMessageContent">extractMessageContent</a></li>
+<li><a href="/docs/api/functions/extractSyncdPatches">extractSyncdPatches</a></li>
+<li><a href="/docs/api/functions/extractUrlFromText">extractUrlFromText</a></li>
+<li><a href="/docs/api/functions/fetchLatestBaileysVersion">fetchLatestBaileysVersion</a></li>
+<li><a href="/docs/api/functions/fetchLatestWaWebVersion">fetchLatestWaWebVersion</a></li>
+<li><a href="/docs/api/functions/generateForwardMessageContent">generateForwardMessageContent</a></li>
+<li><a href="/docs/api/functions/generateLinkPreviewIfRequired">generateLinkPreviewIfRequired</a></li>
+<li><a href="/docs/api/functions/generateLoginNode">generateLoginNode</a></li>
+<li><a href="/docs/api/functions/generateMdTagPrefix">generateMdTagPrefix</a></li>
+<li><a href="/docs/api/functions/generateMessageID">generateMessageID</a></li>
+<li><a href="/docs/api/functions/generateMessageIDV2">generateMessageIDV2</a></li>
+<li><a href="/docs/api/functions/generateOrGetPreKeys">generateOrGetPreKeys</a></li>
+<li><a href="/docs/api/functions/generateProfilePicture">generateProfilePicture</a></li>
+<li><a href="/docs/api/functions/generateRegistrationId">generateRegistrationId</a></li>
+<li><a href="/docs/api/functions/generateRegistrationNode">generateRegistrationNode</a></li>
+<li><a href="/docs/api/functions/generateSignalPubKey">generateSignalPubKey</a></li>
+<li><a href="/docs/api/functions/generateThumbnail">generateThumbnail</a></li>
+<li><a href="/docs/api/functions/generateWAMessage">generateWAMessage</a></li>
+<li><a href="/docs/api/functions/generateWAMessageContent">generateWAMessageContent</a></li>
+<li><a href="/docs/api/functions/generateWAMessageFromContent">generateWAMessageFromContent</a></li>
+<li><a href="/docs/api/functions/getAggregateVotesInPollMessage">getAggregateVotesInPollMessage</a></li>
+<li><a href="/docs/api/functions/getAllBinaryNodeChildren">getAllBinaryNodeChildren</a></li>
+<li><a href="/docs/api/functions/getAudioDuration">getAudioDuration</a></li>
+<li><a href="/docs/api/functions/getAudioWaveform">getAudioWaveform</a></li>
+<li><a href="/docs/api/functions/getBinaryNodeChild">getBinaryNodeChild</a></li>
+<li><a href="/docs/api/functions/getBinaryNodeChildBuffer">getBinaryNodeChildBuffer</a></li>
+<li><a href="/docs/api/functions/getBinaryNodeChildren">getBinaryNodeChildren</a></li>
+<li><a href="/docs/api/functions/getBinaryNodeChildString">getBinaryNodeChildString</a></li>
+<li><a href="/docs/api/functions/getBinaryNodeChildUInt">getBinaryNodeChildUInt</a></li>
+<li><a href="/docs/api/functions/getBinaryNodeMessages">getBinaryNodeMessages</a></li>
+<li><a href="/docs/api/functions/getCallStatusFromNode">getCallStatusFromNode</a></li>
+<li><a href="/docs/api/functions/getChatId">getChatId</a></li>
+<li><a href="/docs/api/functions/getCodeFromWSError">getCodeFromWSError</a></li>
+<li><a href="/docs/api/functions/getContentType">getContentType</a></li>
+<li><a href="/docs/api/functions/getDevice">getDevice</a></li>
+<li><a href="/docs/api/functions/getErrorCodeFromStreamError">getErrorCodeFromStreamError</a></li>
+<li><a href="/docs/api/functions/getHistoryMsg">getHistoryMsg</a></li>
+<li><a href="/docs/api/functions/getHttpStream">getHttpStream</a></li>
+<li><a href="/docs/api/functions/getKeyAuthor">getKeyAuthor</a></li>
+<li><a href="/docs/api/functions/getMediaKeys">getMediaKeys</a></li>
+<li><a href="/docs/api/functions/getNextPreKeys">getNextPreKeys</a></li>
+<li><a href="/docs/api/functions/getNextPreKeysNode">getNextPreKeysNode</a></li>
+<li><a href="/docs/api/functions/getPlatformId">getPlatformId</a></li>
+<li><a href="/docs/api/functions/getPreKeys">getPreKeys</a></li>
+<li><a href="/docs/api/functions/getStatusCodeForMediaRetry">getStatusCodeForMediaRetry</a></li>
+<li><a href="/docs/api/functions/getStatusFromReceiptType">getStatusFromReceiptType</a></li>
+<li><a href="/docs/api/functions/getStream">getStream</a></li>
+<li><a href="/docs/api/functions/getUrlFromDirectPath">getUrlFromDirectPath</a></li>
+<li><a href="/docs/api/functions/getUrlInfo">getUrlInfo</a></li>
+<li><a href="/docs/api/functions/getWAUploadToServer">getWAUploadToServer</a></li>
+<li><a href="/docs/api/functions/hkdf">hkdf</a></li>
+<li><a href="/docs/api/functions/hkdfInfoKey">hkdfInfoKey</a></li>
+<li><a href="/docs/api/functions/hmacSign">hmacSign</a></li>
+<li><a href="/docs/api/functions/initAuthCreds">initAuthCreds</a></li>
+<li><a href="/docs/api/functions/isJidBroadcast">isJidBroadcast</a></li>
+<li><a href="/docs/api/functions/isJidGroup">isJidGroup</a></li>
+<li><a href="/docs/api/functions/isJidNewsletter">isJidNewsletter</a></li>
+<li><a href="/docs/api/functions/isJidStatusBroadcast">isJidStatusBroadcast</a></li>
+<li><a href="/docs/api/functions/isJidUser">isJidUser</a></li>
+<li><a href="/docs/api/functions/isLidUser">isLidUser</a></li>
+<li><a href="/docs/api/functions/isRealMessage">isRealMessage</a></li>
+<li><a href="/docs/api/functions/isWABusinessPlatform">isWABusinessPlatform</a></li>
+<li><a href="/docs/api/functions/jidDecode">jidDecode</a></li>
+<li><a href="/docs/api/functions/jidEncode">jidEncode</a></li>
+<li><a href="/docs/api/functions/jidNormalizedUser">jidNormalizedUser</a></li>
+<li><a href="/docs/api/functions/makeCacheableSignalKeyStore">makeCacheableSignalKeyStore</a></li>
+<li><a href="/docs/api/functions/makeEventBuffer">makeEventBuffer</a></li>
+<li><a href="/docs/api/functions/makeNoiseHandler">makeNoiseHandler</a></li>
+<li><a href="/docs/api/functions/makeWASocket">makeWASocket</a></li>
+<li><a href="/docs/api/functions/md5">md5</a></li>
+<li><a href="/docs/api/functions/mediaMessageSHA256B64">mediaMessageSHA256B64</a></li>
+<li><a href="/docs/api/functions/newLTHashState">newLTHashState</a></li>
+<li><a href="/docs/api/functions/normalizeMessageContent">normalizeMessageContent</a></li>
+<li><a href="/docs/api/functions/parseAndInjectE2ESessions">parseAndInjectE2ESessions</a></li>
+<li><a href="/docs/api/functions/prepareDisappearingMessageSettingContent">prepareDisappearingMessageSettingContent</a></li>
+<li><a href="/docs/api/functions/prepareWAMessageMedia">prepareWAMessageMedia</a></li>
+<li><a href="/docs/api/functions/processHistoryMessage">processHistoryMessage</a></li>
+<li><a href="/docs/api/functions/processSyncAction">processSyncAction</a></li>
+<li><a href="/docs/api/functions/promiseTimeout">promiseTimeout</a></li>
+<li><a href="/docs/api/functions/readAndEmitEventStream">readAndEmitEventStream</a></li>
+<li><a href="/docs/api/functions/reduceBinaryNodeToDictionary">reduceBinaryNodeToDictionary</a></li>
+<li><a href="/docs/api/functions/sha256">sha256</a></li>
+<li><a href="/docs/api/functions/shouldIncrementChatUnread">shouldIncrementChatUnread</a></li>
+<li><a href="/docs/api/functions/signedKeyPair">signedKeyPair</a></li>
+<li><a href="/docs/api/functions/toBuffer">toBuffer</a></li>
+<li><a href="/docs/api/functions/toNumber">toNumber</a></li>
+<li><a href="/docs/api/functions/toReadable">toReadable</a></li>
+<li><a href="/docs/api/functions/trimUndefined">trimUndefined</a></li>
+<li><a href="/docs/api/functions/unixTimestampSeconds">unixTimestampSeconds</a></li>
+<li><a href="/docs/api/functions/unpadRandomMax16">unpadRandomMax16</a></li>
+<li><a href="/docs/api/functions/updateMessageWithPollUpdate">updateMessageWithPollUpdate</a></li>
+<li><a href="/docs/api/functions/updateMessageWithReaction">updateMessageWithReaction</a></li>
+<li><a href="/docs/api/functions/updateMessageWithReceipt">updateMessageWithReceipt</a></li>
+<li><a href="/docs/api/functions/useMultiFileAuthState">useMultiFileAuthState</a></li>
+<li><a href="/docs/api/functions/writeRandomPadMax16">writeRandomPadMax16</a></li>
+<li><a href="/docs/api/functions/xmppPreKey">xmppPreKey</a></li>
+<li><a href="/docs/api/functions/xmppSignedPreKey">xmppSignedPreKey</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="default">default<a href="#default" class="hash-link" aria-label="Direct link to default" title="Direct link to default">​</a></h3>
+<p>Renames and re-exports <a href="/docs/api/functions/makeWASocket">makeWASocket</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wamessagestatus">WAMessageStatus<a href="#wamessagestatus" class="hash-link" aria-label="Direct link to WAMessageStatus" title="Direct link to WAMessageStatus">​</a></h3>
+<p>Renames and re-exports <a href="/docs/api/namespaces/proto/namespaces/WebMessageInfo/enumerations/Status">Status</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wamessagestubtype">WAMessageStubType<a href="#wamessagestubtype" class="hash-link" aria-label="Direct link to WAMessageStubType" title="Direct link to WAMessageStubType">​</a></h3>
+<p>Renames and re-exports <a href="/docs/api/namespaces/proto/namespaces/WebMessageInfo/enumerations/StubType">StubType</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="waproto">WAProto<a href="#waproto" class="hash-link" aria-label="Direct link to WAProto" title="Direct link to WAProto">​</a></h3>
+<p>Renames and re-exports <a href="/docs/api/namespaces/proto/">proto</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/WhiskeySockets/baileys.wiki/tree/main/docs/docs/api/index.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/api/functions/xmppSignedPreKey"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Function: xmppSignedPreKey()</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/api/interfaces/BaileysEventEmitter"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Interface: BaileysEventEmitter</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#namespaces" class="table-of-contents__link toc-highlight">Namespaces</a></li><li><a href="#enumerations" class="table-of-contents__link toc-highlight">Enumerations</a></li><li><a href="#classes" class="table-of-contents__link toc-highlight">Classes</a></li><li><a href="#interfaces" class="table-of-contents__link toc-highlight">Interfaces</a></li><li><a href="#type-aliases" class="table-of-contents__link toc-highlight">Type Aliases</a></li><li><a href="#variables" class="table-of-contents__link toc-highlight">Variables</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a><ul><li><a href="#default" class="table-of-contents__link toc-highlight">default</a></li><li><a href="#wamessagestatus" class="table-of-contents__link toc-highlight">WAMessageStatus</a></li><li><a href="#wamessagestubtype" class="table-of-contents__link toc-highlight">WAMessageStubType</a></li><li><a href="#waproto" class="table-of-contents__link toc-highlight">WAProto</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/WhiskeySockets/Baileys" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="margin-bottom--sm"><img src="/img/Written-By-Human-Not-By-AI-Badge-white.svg" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/Written-By-Human-Not-By-AI-Badge-white.svg" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU"></div><div class="footer__copyright">Copyright © 2025 Rajeh Taher, WhiskeySockets.</div></div></div></footer></div>
+</body>
+</html>
