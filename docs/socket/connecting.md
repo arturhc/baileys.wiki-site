@@ -48,7 +48,7 @@ In order to reconnect successfully, we must pass a way for Baileys to persist cr
 
 :::warning
 DONT EVER USE THE `useMultiFileAuthState` IN PROD. YOU HAVE BEEN WARNED.
-This function consumes a lot of IO. Only use its [implementation](https://github.com/WhiskeySockets/Baileys/tree/main/src/Utils/useMiltiFileAuthState.ts) as a guide.
+This function consumes a lot of IO. Only use its [implementation](https://github.com/WhiskeySockets/Baileys/tree/main/src/Utils/useMultiFileAuthState.ts) as a guide.
 As I said earlier [here](./configuration#auth)
 :::
 

@@ -64,7 +64,6 @@ Self-explanatory
 ### call
 Universal event for call data (accept/decline/offer/timeout etc.)
 
-
 ## Contact events
 
 ### contacts.upsert
