@@ -5,3 +5,7 @@
 # Translation contribution link -> ./translation.md
 
 # Linking to / providing internal / dev docs
+// extending-baileys guide
+
+
+## Extending Baileys
