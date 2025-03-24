@@ -1,4 +1,4 @@
-# Introduction to USYNC API Docs
+# Usync Protocol Docs
 Wh..
 
 

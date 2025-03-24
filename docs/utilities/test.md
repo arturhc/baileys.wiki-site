@@ -1,3 +1,0 @@
-# Test
-
-## Logging / Custom Logger

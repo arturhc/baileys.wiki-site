@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # Privacy
 Baileys has some missing privacy settings as of the writing of this page. The currently exposed methods are:
 
