@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Function: makeWASocket() | Baileys</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" name="twitter:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" property="og:url" content="https://baileys.wiki/docs/api/functions/makeWASocket"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Function: makeWASocket() | Baileys"><meta data-rh="true" name="description" content="makeWASocket(config): object"><meta data-rh="true" property="og:description" content="makeWASocket(config): object"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://baileys.wiki/docs/api/functions/makeWASocket"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/functions/makeWASocket" hreflang="en"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/functions/makeWASocket" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.b48fa96d.css">
-<script src="/assets/js/runtime~main.0ce619bd.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.081866c2.js" defer="defer"></script>
 <script src="/assets/js/main.aa660933.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -12,7 +12,7 @@
 <blockquote>
 <p><strong>makeWASocket</strong>(<code>config</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/a4338fac12a54a36890845c99abd56e92b88cdf6/src/Socket/index.ts#L6" target="_blank" rel="noopener noreferrer">src/Socket/index.ts:6</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/5ee939418c0fe4df0c83509d859cdf383f44fb7e/src/Socket/index.ts#L6" target="_blank" rel="noopener noreferrer">src/Socket/index.ts:6</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="config">config<a href="#config" class="hash-link" aria-label="Direct link to config" title="Direct link to config">​</a></h3>
 <p><a href="/docs/api/type-aliases/UserFacingSocketConfig"><code>UserFacingSocketConfig</code></a></p>
@@ -247,13 +247,13 @@ requires the last messages till the last message received; required for archive 
 <p><code>Promise</code>&lt;<a href="/docs/api/type-aliases/OrderDetails"><code>OrderDetails</code></a>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="getprivacytokens">getPrivacyTokens()<a href="#getprivacytokens" class="hash-link" aria-label="Direct link to getPrivacyTokens()" title="Direct link to getPrivacyTokens()">​</a></h3>
 <blockquote>
-<p><strong>getPrivacyTokens</strong>: (<code>jids</code>) =&gt; <code>Promise</code>&lt;<a href="/docs/api/type-aliases/BinaryNode"><code>BinaryNode</code></a>&gt;</p>
+<p><strong>getPrivacyTokens</strong>: (<code>jids</code>) =&gt; <code>Promise</code>&lt;<code>any</code>&gt;</p>
 </blockquote>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-19">Parameters<a href="#parameters-19" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="jids-4">jids<a href="#jids-4" class="hash-link" aria-label="Direct link to jids" title="Direct link to jids">​</a></h5>
 <p><code>string</code>[]</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-22">Returns<a href="#returns-22" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
-<p><code>Promise</code>&lt;<a href="/docs/api/type-aliases/BinaryNode"><code>BinaryNode</code></a>&gt;</p>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="getusyncdevices">getUSyncDevices()<a href="#getusyncdevices" class="hash-link" aria-label="Direct link to getUSyncDevices()" title="Direct link to getUSyncDevices()">​</a></h3>
 <blockquote>
 <p><strong>getUSyncDevices</strong>: (<code>jids</code>, <code>useCache</code>, <code>ignoreZeroDevices</code>) =&gt; <code>Promise</code>&lt;<a href="/docs/api/type-aliases/JidWithDevice"><code>JidWithDevice</code></a>[]&gt;</p>
@@ -279,14 +279,14 @@ requires the last messages till the last message received; required for archive 
 <p><code>Promise</code>&lt;<code>undefined</code> | <code>string</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="groupacceptinvitev4">groupAcceptInviteV4()<a href="#groupacceptinvitev4" class="hash-link" aria-label="Direct link to groupAcceptInviteV4()" title="Direct link to groupAcceptInviteV4()">​</a></h3>
 <blockquote>
-<p><strong>groupAcceptInviteV4</strong>: (...<code>args</code>) =&gt; <code>Promise</code>&lt;<code>string</code>&gt;</p>
+<p><strong>groupAcceptInviteV4</strong>: (...<code>args</code>) =&gt; <code>Promise</code>&lt;<code>any</code>&gt;</p>
 </blockquote>
 <p>accept a GroupInviteMessage</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-22">Parameters<a href="#parameters-22" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="args">args<a href="#args" class="hash-link" aria-label="Direct link to args" title="Direct link to args">​</a></h5>
 <p>...[<code>string</code> | <a href="/docs/api/namespaces/proto/interfaces/IMessageKey"><code>IMessageKey</code></a>, <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IGroupInviteMessage"><code>IGroupInviteMessage</code></a>]</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-25">Returns<a href="#returns-25" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
-<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="groupcreate">groupCreate()<a href="#groupcreate" class="hash-link" aria-label="Direct link to groupCreate()" title="Direct link to groupCreate()">​</a></h3>
 <blockquote>
 <p><strong>groupCreate</strong>: (<code>subject</code>, <code>participants</code>) =&gt; <code>Promise</code>&lt;<a href="/docs/api/interfaces/GroupMetadata"><code>GroupMetadata</code></a>&gt;</p>
@@ -572,7 +572,7 @@ type = &quot;image for the high res picture&quot;</p>
 <p><code>Promise</code>&lt;<code>undefined</code> | <code>string</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="query">query()<a href="#query" class="hash-link" aria-label="Direct link to query()" title="Direct link to query()">​</a></h3>
 <blockquote>
-<p><strong>query</strong>: (<code>node</code>, <code>timeoutMs</code>?) =&gt; <code>Promise</code>&lt;<a href="/docs/api/type-aliases/BinaryNode"><code>BinaryNode</code></a>&gt;</p>
+<p><strong>query</strong>: (<code>node</code>, <code>timeoutMs</code>?) =&gt; <code>Promise</code>&lt;<code>any</code>&gt;</p>
 </blockquote>
 <p>send a query, and wait for its response. auto-generates message ID if not provided</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-48">Parameters<a href="#parameters-48" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
@@ -581,7 +581,7 @@ type = &quot;image for the high res picture&quot;</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="timeoutms-1">timeoutMs?<a href="#timeoutms-1" class="hash-link" aria-label="Direct link to timeoutMs?" title="Direct link to timeoutMs?">​</a></h5>
 <p><code>number</code></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-52">Returns<a href="#returns-52" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
-<p><code>Promise</code>&lt;<a href="/docs/api/type-aliases/BinaryNode"><code>BinaryNode</code></a>&gt;</p>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="readmessages">readMessages()<a href="#readmessages" class="hash-link" aria-label="Direct link to readMessages()" title="Direct link to readMessages()">​</a></h3>
 <blockquote>
 <p><strong>readMessages</strong>: (<code>keys</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
@@ -794,13 +794,13 @@ used for receipts of phone call, read, delivery etc.</p>
 <p><code>Promise</code>&lt;<code>void</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="sendwambuffer">sendWAMBuffer()<a href="#sendwambuffer" class="hash-link" aria-label="Direct link to sendWAMBuffer()" title="Direct link to sendWAMBuffer()">​</a></h3>
 <blockquote>
-<p><strong>sendWAMBuffer</strong>: (<code>wamBuffer</code>) =&gt; <code>Promise</code>&lt;<a href="/docs/api/type-aliases/BinaryNode"><code>BinaryNode</code></a>&gt;</p>
+<p><strong>sendWAMBuffer</strong>: (<code>wamBuffer</code>) =&gt; <code>Promise</code>&lt;<code>any</code>&gt;</p>
 </blockquote>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-68">Parameters<a href="#parameters-68" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="wambuffer">wamBuffer<a href="#wambuffer" class="hash-link" aria-label="Direct link to wamBuffer" title="Direct link to wamBuffer">​</a></h5>
 <p><code>Buffer</code></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-72">Returns<a href="#returns-72" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
-<p><code>Promise</code>&lt;<a href="/docs/api/type-aliases/BinaryNode"><code>BinaryNode</code></a>&gt;</p>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="signalrepository">signalRepository<a href="#signalrepository" class="hash-link" aria-label="Direct link to signalRepository" title="Direct link to signalRepository">​</a></h3>
 <blockquote>
 <p><strong>signalRepository</strong>: <a href="/docs/api/type-aliases/SignalRepository"><code>SignalRepository</code></a></p>
@@ -998,7 +998,7 @@ used for receipts of phone call, read, delivery etc.</p>
 <p><code>Promise</code>&lt;<code>void</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="waitformessage">waitForMessage()<a href="#waitformessage" class="hash-link" aria-label="Direct link to waitForMessage()" title="Direct link to waitForMessage()">​</a></h3>
 <blockquote>
-<p><strong>waitForMessage</strong>: &lt;<code>T</code>&gt;(<code>msgId</code>, <code>timeoutMs</code>) =&gt; <code>Promise</code>&lt;<code>T</code>&gt;</p>
+<p><strong>waitForMessage</strong>: &lt;<code>T</code>&gt;(<code>msgId</code>, <code>timeoutMs</code>) =&gt; <code>Promise</code>&lt;<code>any</code>&gt;</p>
 </blockquote>
 <p>Wait for a message with a certain tag to be received</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="type-parameters-1">Type Parameters<a href="#type-parameters-1" class="hash-link" aria-label="Direct link to Type Parameters" title="Direct link to Type Parameters">​</a></h4>
@@ -1011,7 +1011,7 @@ used for receipts of phone call, read, delivery etc.</p>
 <p>timeout after which the promise will reject</p>
 <p><code>undefined</code> | <code>number</code></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-92">Returns<a href="#returns-92" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
-<p><code>Promise</code>&lt;<code>T</code>&gt;</p>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="waitforsocketopen">waitForSocketOpen()<a href="#waitforsocketopen" class="hash-link" aria-label="Direct link to waitForSocketOpen()" title="Direct link to waitForSocketOpen()">​</a></h3>
 <blockquote>
 <p><strong>waitForSocketOpen</strong>: () =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
